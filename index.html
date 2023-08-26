@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fc5186f2c7e8f6f53d2ad3640316709 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4fc5186f2c7e8f6f53d2ad3640316709" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4fc5186f2c7e8f6f53d2ad3640316709 = L.map(
+                "map_4fc5186f2c7e8f6f53d2ad3640316709",
+                {
+                    center: [-1.2894289419116627, 36.82331216592736],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f19b76772151b886b2e711102d369aed = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4fc5186f2c7e8f6f53d2ad3640316709);
+        
+    
+            var circle_f438a10d430108d6a807da6fd24bd1e4 = L.circle(
+                [-1.3303346965969862, 36.925087072124406],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_4fc5186f2c7e8f6f53d2ad3640316709);
+        
+    
+            circle_f438a10d430108d6a807da6fd24bd1e4.bindTooltip(
+                `<div>
+                     This Cicle marker has radius 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_77191b8b03881e5235f4b1f51198f2c9 = L.circleMarker(
+                [-1.3410409318472776, 36.917421270589784],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_4fc5186f2c7e8f6f53d2ad3640316709);
+        
+    
+            circle_marker_77191b8b03881e5235f4b1f51198f2c9.bindTooltip(
+                `<div>
+                     Four Points by Sheraton Nairobi Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b35edf1231a0fd90e6cd459f58490b39 = L.marker(
+                [-1.3407330369286858, 36.91304988482857],
+                {}
+            ).addTo(map_4fc5186f2c7e8f6f53d2ad3640316709);
+        
+    
+            var icon_7f87ab9ac001ca156c0960ee21de742f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b35edf1231a0fd90e6cd459f58490b39.setIcon(icon_7f87ab9ac001ca156c0960ee21de742f);
+        
+    
+            marker_b35edf1231a0fd90e6cd459f58490b39.bindTooltip(
+                `<div>
+                     Crowne Plaza Nairobi Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
